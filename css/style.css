@@ -179,7 +179,15 @@ header .container .button a{
 /* /jumbotron */
 
 /* MAIN */
-
+.waves{
+  background-image: url("../img/wave.svg");
+  height: 50px;
+}
+.waves-reverse{
+  background-image: url("../img/wave.svg");
+  height: 50px;
+  transform:rotate(180deg);
+}
 
 .bg-gray{
   background-color: #f6f6f6;
