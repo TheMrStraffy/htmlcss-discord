@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+body{
+  font-family: sans-serif;
+  
+}
+
 .container{
   width: 90%;
   max-width: 1200px;
@@ -16,9 +21,46 @@ ul{
   list-style-type: none;
 }
 
+ul li{
+  color: white;
+  font-size: 1.3rem;
+}
+
+
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+ul li a:hover{
+  text-decoration: underline;
+  color: rgb(200, 201, 209);
+}
+
+h1{
+  font-size: 3.0rem;
+}
+h2 {
+  font-size: 2.2rem;
+}
+h3 {
+  font-size: 1.8rem;
+}
+span{
+  font-size: 1.4rem;
+  color: white;
+}
+p {
+  font-size: 1.5rem;
+  
+}
+
 /* /GENERAL */
 
 /* /header */
+
+
 
 header{
   display: flex;
@@ -33,13 +75,7 @@ header .container{
   align-items: center;
 }
 
-header .container .logo{
-  background-image: url("../img/logo.svg");
-  width: 120px;
-  height: 30px;
-  background-size: cover;
 
-}
 header .container .menu{
   flex-basis: 60%;
   
@@ -51,14 +87,8 @@ header .container .menu{
   
 }
 
-.menu ul li a{
-  text-decoration: none;
-  color: white;
-}
-.menu ul li a:hover{
-  text-decoration: underline;
-  color: rgb(200, 201, 209);
-}
+
+
 
 header .container .button{
   display: flex;
@@ -69,6 +99,10 @@ header .container .button{
   background-color: #ffffff;
   color: #23272a;
   border-radius: 25px;
+}
+
+header .container .button a{
+  color: black;
 }
 
 
@@ -88,6 +122,8 @@ header .container .button{
   
   height: 550px;
 
+  margin-bottom: 80px;
+
 }
 .jumbotron .content{
   display: flex;
@@ -100,7 +136,8 @@ header .container .button{
   
 }
 
-.jumbotron .content h1, p , .btn-link{
+.jumbotron .content{
+  gap: 30px;
   padding: 15px;
   color: white;
 }
@@ -128,8 +165,155 @@ header .container .button{
   background-color: #ffffff;
   color: #23272a;
 }
+.btn-link .button.white a{
+  background-color: #ffffff;
+  color: #23272a;
+}
 .btn-link .button.black{
   background-color: #23272a;
 }
+.btn-link .button.black a{
+  color: white;
+}
 
 /* /jumbotron */
+
+/* MAIN */
+.bg-gray{
+  background-color: lightgray;
+}
+section{
+  padding: 30px 0;
+}
+section .container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+
+}
+
+.container .text h2{
+  font-size: 2rem;
+}
+
+section .container .image{
+  flex-basis: 60%;
+}
+section .container .text h2,p{
+  padding: 20px 0;
+}
+section .container .text{
+  flex-basis: 40%;
+  
+}
+
+.main-bottom{
+  padding-bottom: 50px;
+}
+
+.main-bottom .container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 30px;
+}
+.main-bottom .container .stars{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/stars.svg");
+  background-position: center;
+  background-size: contain;
+  width: 600px;
+  height: 60px;
+  
+}
+
+.stars h3{
+  font-size: 1.5rem;
+}
+
+.cta .button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #8ea1e1;
+  width: 230px;
+  height: 45px;
+  border-radius: 25px;
+}
+/* /MAIN */
+
+/* footer */
+
+footer{
+  background-color: #23272a;
+  height: 620px;
+  padding-top: 50px;
+}
+
+/* top-footer */
+
+footer .container .footer-top{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #6f85d4;
+}
+
+.col-social{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 20%;
+}
+
+.footer-top h3,h2{
+  color: #6f85d4;
+}
+
+.col-social h2, span {
+ margin-bottom: 15px;
+}
+
+.social-logos .fa-brands{
+  font-size: 1.3rem;
+  padding-right: 15px;
+  
+}
+.col-social span img{
+  width: 25px;
+  height: 17px;
+}
+
+footer .contain .footer-top .col-menu{
+  width: calc(70% / 4);
+}
+
+.footer-top ul li{
+  padding: 5px 0;
+}
+
+/* / top-footer */
+
+/* bottom-footer */
+.footer-bottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 25px;
+  
+}
+
+.footer-bottom .button{
+
+  background-color: #6f85d4;
+  color: white;
+  padding: 10px;
+  border-radius: 30px;
+  
+}
+/* /bottom-footer */
