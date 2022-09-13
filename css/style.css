@@ -179,8 +179,10 @@ header .container .button a{
 /* /jumbotron */
 
 /* MAIN */
+
+
 .bg-gray{
-  background-color: lightgray;
+  background-color: #f6f6f6;
 }
 section{
   padding: 30px 0;
